@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int y;
+    int m;
+    
+    std::cin >> y;
+    std::cin >> m;
+    
+    int dif = m - y;
+    std::cout << m + dif;
+    return 0;
+    
+}
