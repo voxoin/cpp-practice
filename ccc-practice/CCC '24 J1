@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int r;
+    std::cin >> r;
+    int g;
+    std::cin >> g;
+    int b;
+    std::cin >> b;
+    int total = r*3 + g*4 + b*5;
+    
+    std::cout << total;
+    
+    
+    return 0;
+}
