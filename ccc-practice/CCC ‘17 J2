@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+
+int main() {
+    
+    int n;
+    int k;
+    
+    std::cin >> n;
+    std::cin >> k;
+    
+    std::vector<int> numbers;
+    
+    numbers.push_back(n);
+
+    
+    for (int i = 0; i < k; i++) {
+        numbers.push_back(n * pow(10, (i+1)));
+    }
+    
+    int length = numbers.size();
+    int total = 0;
+    for (int i = 0; i < length; i++) {
+        total += numbers[i];
+        
+    }
+    
+    std::cout << total << "\n";
+    
+    return 0;
+}
