@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+
+int main() {
+    int d;
+    int e;
+    int q;
+    std::string symbol;
+    
+    
+    std::cin >> d;
+    std::cin >> e;
+    
+    for (int i = 0; i < e; i++) {
+        std::cin >> symbol;
+        std::cin >> q;
+
+
+        if (symbol == "-") {
+            d -= q;
+        }
+        else {
+            d += q;
+        }
+        
+    }
+    
+    std::cout << d << "\n";
+    
+    return 0;
+}
