@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+
+int main() {
+    // get input
+    int a;
+    int n;
+    std::string input;
+    std::vector<std::string> adjectives;
+    std::vector<std::string> nouns;
+    
+    std::cin >> a;
+    std::cin >> n;
+    
+    
+    for (int i = 0; i < a; i++) {
+        std::cin >> input;
+        adjectives.push_back(input);
+    }
+    
+    for (int i = 0; i < n; i++) {
+        std::cin >> input;
+        nouns.push_back(input);
+    }
+    
+    // display output
+    for (int i = 0; i < a; i++) {
+        for (int index = 0; index < n; index++)
+            std::cout << adjectives[i] << " as " << nouns[index] << "\n";
+    }
+  
+    
+    return 0;
+}
